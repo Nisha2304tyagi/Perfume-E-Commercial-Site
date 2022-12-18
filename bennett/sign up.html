@@ -1,0 +1,70 @@
+<html>  
+<head>  
+<title> place order Page</title>
+<style> body{ background-image: url("signupbg.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+    </style>
+</head>  
+<body align="center"  >
+<h1> PlACE YOUR ORDER</h1>  
+<table cellspacing="2" align="center" cellpadding="8" border="solid black;6px" height="500px" width="400px">  
+<tr><td style="color: #fff;"> Name</td>   
+<td><input type="text" placeholder="Enter your name" id="n1"></td></tr>  
+<tr><td style="color: #fff;">Email </td>  
+<td><input type="text" placeholder="Enter your email id" id="e1"></td></tr>  
+<tr><td style="color: #fff;"> Set Password</td>  
+<td><input type="password" placeholder="Set a password" id="p1"></td></tr>  
+<tr><td style="color: #fff;">Address</td>  
+<td><input type="text" placeholder="enter your address" id="p2"></td></tr>  
+<tr><td style="color: #fff;">mode of payment</td>  
+<td style="color: #fff;"><label>
+        <input type="radio" name="gender" >COD
+    </label>
+    <label>
+        <input type="radio" name="gender">Online
+    </label>  
+</td>
+<input type="submit" value=" Order"  onClick="buy()"/ a href="submit.html">  
+</table>  
+<script type="text/javascript">  
+function buy(){  
+var n=document.getElementById("n1").value;  
+var e=document.getElementById("e1").value;  
+var p=document.getElementById("p1").value;  
+var cp=document.getElementById("p2").value;  
+//Code for password validation  
+        var letters = /^[A-Za-z]+$/;  
+        var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+//other validations required code  
+if(n==''||e==''||p==''||cp==''){  
+alert("Enter each details correctly");  
+}  
+else if(!letters.test(n))  
+        {  
+            alert('Name is incorrect must contain alphabets only');  
+        }  
+else if (!email_val.test(e))  
+        {  
+            alert('Invalid email format please enter valid email id');  
+        }  
+
+else if(document.getElementById("p1").value.length > 12)  
+{  
+alert("Password maximum length is 12");  
+}  
+else if(document.getElementById("p1").value.length < 6)  
+{  
+alert("Password minimum length is 6");  
+}  
+else{  
+alert("Your order has been placed!!");  
+window.location="order placed.html";  
+}  
+}  
+</script>  
+</body>  
+</html>  

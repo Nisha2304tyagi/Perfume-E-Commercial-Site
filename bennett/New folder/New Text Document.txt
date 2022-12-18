@@ -1,0 +1,5 @@
+for (var i =2;i<2;i++)
+{
+    i =i+4;
+    print(i)
+}

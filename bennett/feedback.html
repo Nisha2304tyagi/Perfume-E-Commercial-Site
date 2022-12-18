@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <style>
+        body{
+            background:url(images/bgimage.jpg);
+            background-size: cover;
+        }
+
+        .container2{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height:120px;
+            width: 120px;
+            margin: 15% 25%;
+        }
+
+        .navbar{
+            margin: 3% 3%;
+        }
+
+        .navbar li{
+            display: inline-block;
+            margin-right: 28px;
+        }
+        .navbar a:hover{
+            color: rgb(97, 73, 116);
+        }
+        
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .testimonial{
+            margin: auto;
+            margin-right: 10%;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            color: rgb(58, 40, 36);
+            margin-bottom: 40px;
+        }
+        .box{
+            margin: auto;
+            height: 350px;
+            width: 250px;
+            background-color: rgb(204, 204, 160);
+            margin-top: 50px;
+        }
+
+        .box img{
+            display: block;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .box h6{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(65, 15, 80);
+        }
+        .box p{
+            margin: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(37, 37, 37);
+            text-align: center;
+        }
+
+        .feedback h1{
+            margin-top: 10%;
+            margin-bottom: 6%;
+        }
+        form{
+            height: auto;
+            width: 45%;
+            padding: 35px 30px;
+            background-color: rgba(139, 163, 156, 0.781);
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        .one{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .one input{
+            display: block;
+            font-size: 15px;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 96%;
+            border-radius: 7px;
+            border: none;
+        }
+
+        .one input:focus{
+            outline: none;
+        }
+
+        .two{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .two p{
+            margin-bottom: 10px;
+        }
+
+        .two .radio label{
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .two .checkbox label{
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .three{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .three textarea{
+            display: block;
+            font-size: 15px;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 96%;
+            border-radius: 7px;
+            border: none;
+        }
+
+        .three textarea:focus{
+            outline: none;
+        }
+
+        .submit{
+            width: 98%;
+            padding: 10px;
+            margin: auto;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(31, 88, 41);
+            margin-top: 25px;
+        }
+
+        button a{
+            text-decoration: none;
+            color: rgb(207, 220, 231);
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="container2">
+            <div class="logo">
+                <img src="logo.jpeg" alt="">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="feedback.html">Testimonials</a></li>
+                    <li><a href="homepage.html">Contact Us</a></li>
+                    <li><a href="frame.html">Creators</a></li>
+                </ul>
+            </div>
+       </div>
+       <h1>Testimonials</h1>
+        <div class="testimonial">
+                <div class="box">
+                    <img src="images/t1.png">
+                    <h6>Adam Cornel</h6>
+                    <p>Bought Blue Agava and Cocoa. Such a beautiful fragrance…and identical to original. Will definitely buy again!! Thank you!!</p>
+                </div>
+                <div class="box">
+                    <img src="images/t2.png">
+                    <h6>Patricia Smith</h6>
+                    <p>Absolutely over the moon with my perfume, so much so I have ordered another bottle - So pleased I discovered your website. Thank You for your excellent super fast service.</p>
+                </div>
+                <div class="box">
+                    <img src="images/t3.png">
+                    <h6>Timothy Daze</h6>
+                    <p>Got my perfume today and OMG it's better than the original I think and is really good value for money, I will definitely be ordering again soon.</p>
+                </div>
+        </div>
+
+        <div class="feedback">
+            <h1>Feedback</h1>
+            <form action="">
+
+                <div class="one">
+                    <label>Name
+                        <input type="text" placeholder="your name..." required>
+                    </label>
+                    <label>Contact
+                        <input type="text" placeholder="+91-" required>
+                    </label>
+                    <label>Email
+                        <input type="email" placeholder="@gmail.com">
+                    </label>
+                </div>
+                <div class="two">
+                    <div class="radio">
+                        <p>Gender</p>
+                        <label>
+                            <input type="radio" name="gender">Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">Other
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">Prefer not to say
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <p>Whom would you like to recommend?</p>
+                        <label>
+                            <input type="checkbox" name="recommendation">Family
+                        </label>
+                        <label>
+                            <input type="checkbox" name="recommendation">Friends
+                        </label>
+                        <label>    
+                            <input type="checkbox" name="recommendation">Relatives
+                        </label>
+                        <label>
+                            <input type="checkbox" name="recommendation">Others
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="three">
+                    <label>Comment
+                        <textarea rows="5" type="text" placeholder="feedback..." required></textarea>
+                    </label>
+                </div>
+                
+                <button class="submit"><a href="submit.html">Submit</a></button>
+            </form>
+        </div>
+   </div>
+
+</body>
+</html>
